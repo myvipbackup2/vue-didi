@@ -2,7 +2,19 @@
 用Vue写一个滴滴快车
 
 ## 效果预览
-![](https://github.com/myvipbackup2/vue-didi/screenCut/demo1.gif)
+
+![](https://github.com/myvipbackup2/vue-didi/blob/master/screenCut/demo1.gif)
+
+![](https://github.com/myvipbackup2/vue-didi/blob/master/screenCut/demo0.png)
+
+![](https://github.com/myvipbackup2/vue-didi/blob/master/screenCut/demo2.png)
+
+![](https://github.com/myvipbackup2/vue-didi/blob/master/screenCut/demo3.png)
+
+![](https://github.com/myvipbackup2/vue-didi/blob/master/screenCut/demo4.png)
+
+![](https://github.com/myvipbackup2/vue-didi/blob/master/screenCut/demo5.png)
+
 
 模拟了30秒内随机自动接单，使用了 `Mock.js` 来模拟接单司机姓名和电话
 
@@ -55,7 +67,6 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 * 验证弹窗
 
     ![](https://ooo.0o0.ooo/2017/06/11/593ce560987c0.gif)
-
 
 
 * 定位
