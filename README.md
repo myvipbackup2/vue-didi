@@ -2,7 +2,10 @@
 用Vue写一个滴滴快车
 
 ## 效果预览
-![](https://ooo.0o0.ooo/2017/06/11/593ce65f51ba3.gif)
+![](https://github.com/myvipbackup2/vue-didi/screenCut/demo1.gif)
+
+模拟了30秒内随机自动接单，使用了 `Mock.js` 来模拟接单司机姓名和电话
+
 > 在线预览：[预览](https://uncleze2017.github.io/vue-didi-demo/index.html)
 
 > 根据Github上一个开源的滴滴打车项目修改 项目地址：[github](https://github.com/uncleze2017/Imitation-DIDI-project)
