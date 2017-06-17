@@ -12,7 +12,7 @@ import AMap from 'vue-amap';
 
 Vue.use(VueAxios, axios);
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
 /* eslint-disable no-new */
 
@@ -25,6 +25,3 @@ let vm = new Vue({
   components: {App}
 });
 
-console.log(vm)
-
-export default vm

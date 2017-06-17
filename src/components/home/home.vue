@@ -11,48 +11,48 @@
 </template>
 
 <script>
-import vHeader from './header.vue'
-import vMask from '../Mask.vue'
-import suggest from '../suggest/suggest.vue'
-import userSider from '../userSidebar/sideBar.vue'
-import { mapActions, mapState } from 'vuex'
+  import vHeader from './header.vue'
+  import vMask from '../Mask.vue'
+  import suggest from '../suggest/suggest.vue'
+  import userSider from '../userSidebar/sideBar.vue'
+  import {mapActions, mapState} from 'vuex'
 
-// import vFooter from '@/components/footer.vue'
-// import mapState from 'vuex'
-export default {
-  computed: {
-    ...mapState([
-      'usersidebar',
-      'checkTelephone',
-      'ismask',
-      'suggest',
-      'hasLocation'
-    ])
-  },
-  created() {
-    // if(this.$router.path)
-    // components.log(this.$router.path)
-    // this.$router.replace({path:'home/taxi'})
-  },
-  methods: {
-    // firstLocation() {
-    //   if (!this.hasLocation) {
+  // import vFooter from '@/components/footer.vue'
+  // import mapState from 'vuex'
+  export default {
+    computed: {
+      ...mapState([
+        'usersidebar',
+        'checkTelephone',
+        'ismask',
+        'suggest',
+        'hasLocation'
+      ])
+    },
+    created() {
+      // if(this.$router.path)
+      // components.log(this.$router.path)
+      // this.$router.replace({path:'home/taxi'})
+    },
+    methods: {
+      // firstLocation() {
+      //   if (!this.hasLocation) {
 
-    //   }
-    // },
-    ...mapActions([
-      'get_telephone'
-    ])
-  },
-  components: {
-    vHeader,
-    vMask,
-    suggest,
-    userSider
-  },
-  mounted() {
-    this.get_telephone(),
-    this.$store.dispatch('getCurrentPosition', 'AMap')
+      //   }
+      // },
+      ...mapActions([
+        'get_telephone'
+      ])
+    },
+    components: {
+      vHeader,
+      vMask,
+      suggest,
+      userSider
+    },
+    mounted() {
+      this.get_telephone();
+      this.$store.dispatch('getCurrentPosition', 'AMap')
+    }
   }
-}
 </script>

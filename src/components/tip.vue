@@ -19,7 +19,7 @@
     },
     data(){
       return {
-        num: parseInt(Math.random() * 1000)
+        num: parseInt(Math.random() * 500)
       }
     }
   }

@@ -14,6 +14,8 @@ import loader from '@/components/order/loader'
 import suggest from '@/components/suggest/suggest'
 import webError from '@/components/webError'
 import developing from '@/components/developing'
+import cancel from '@/components/order/orderTip'
+import webErr from '@/components/order/webError'
 
 Vue.use(Router);
 
@@ -56,7 +58,7 @@ export default new Router({
         {
           path: '/user/travel',
           name: 'travel',
-          component: travel
+          component: developing
         },
         {
           path: '/user/setting',
@@ -66,7 +68,7 @@ export default new Router({
         {
           path: '/user/wallet',
           name: 'wallet',
-          component: wallet
+          component: developing
         }
       ]
     },
@@ -84,6 +86,16 @@ export default new Router({
           path: '/order/accepte',
           name: 'accepte',
           component: accepte
+        },
+        {
+          path: '/order/cancel',
+          name: 'cancel',
+          component: cancel
+        },
+        {
+          path: '/order/err',
+          name: 'err',
+          component: webErr
         }
       ]
     },

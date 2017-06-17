@@ -44,7 +44,7 @@
             </button>
           </li>
           <li class="">
-            <button type="">
+            <button>
               <div class="icon-ellipsis-h">
                 <icon name="ellipsis-h"></icon>
               </div>

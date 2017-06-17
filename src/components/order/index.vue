@@ -4,16 +4,18 @@
   </div>
 </template>
 <script>
-  
+
 </script>
 <style>
-  html,body{
+  html, body {
     height: 100%;
   }
-  #app{
+
+  #app {
     height: 100%;
   }
-  .call-taxi{
+
+  .call-taxi {
     height: 100%;
   }
 </style>

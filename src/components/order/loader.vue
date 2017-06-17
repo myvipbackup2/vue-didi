@@ -45,7 +45,8 @@
   export default{
     data () {
       return {
-        taxiCount: 0
+        taxiCount: 0,
+        randomTime: Math.ceil(Math.random() * 30)
       }
     },
     computed: {
@@ -55,16 +56,16 @@
     },
     methods: {
       back () {
-        console.log(this.$router)
+        console.log(this.$router);
         this.$router.go(-1)
       }
     },
     watch: {
       tips (value) {
         if (value % 2 === 0) {
-          this.taxiCount = this.taxiCount + parseInt(Math.random() * 50)  //模拟每秒钟通知车数量递增
+          this.taxiCount = this.taxiCount + parseInt(Math.random() * 35)  //模拟每秒钟通知车数量递增
         }
-        if (value === parseInt(Math.random() * 30)) {  //30秒内自动接单
+        if (value === this.randomTime) {
           this.$router.push({path: '/order/accepte'})
         }
       }
